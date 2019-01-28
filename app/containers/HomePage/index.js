@@ -9,7 +9,11 @@
  * the linting exception.
  */
 
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import H1 from 'components/H1';
+import Layout from 'components/Layout';
+import LayoutBox from 'components/LayoutBox';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
@@ -17,9 +21,20 @@ import messages from './messages';
 export default class HomePage extends React.PureComponent {
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <Fragment>
+        <Layout>
+          <LayoutBox>
+            <H1>
+              <FormattedMessage {...messages.textLeft} />
+            </H1>
+          </LayoutBox>
+          <LayoutBox>
+            <H1>
+              <FormattedMessage {...messages.textRight} />
+            </H1>
+          </LayoutBox>
+        </Layout>
+      </Fragment>
     );
   }
 }
