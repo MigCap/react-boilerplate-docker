@@ -12,7 +12,7 @@ import { theme, mixins } from '../../styles';
 const FooterStyled = styled.footer`
   ${mixins.flexCenter};
   background: ${props =>
-    props.background ? props.background : theme.colors.white};
+    props.background ? props.background : theme.colors.cream};
   border: solid 5px ${theme.colors.green};
   height: ${props => (props.height ? props.height : theme.footerHeigh)};
 `;

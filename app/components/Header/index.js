@@ -13,7 +13,7 @@ import { theme, mixins } from '../../styles';
 const HeaderStyled = styled.header`
   ${mixins.flexRight};
   background: ${props =>
-    props.background ? props.background : theme.colors.white};
+    props.background ? props.background : theme.colors.cream};
   height: ${props => (props.background ? props.background : theme.headerHeigh)};
   border: solid 5px ${theme.colors.green};
 `;

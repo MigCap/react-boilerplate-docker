@@ -35,11 +35,15 @@ export default defineMessages({
   },
   mockText: {
     id: `${scope}.mockText`,
-    defaultMessage: 'MOCK MOCK MOCK MOCK',
+    defaultMessage: 'jan tschichold',
   },
   backHome: {
     id: `${scope}.backHome`,
     defaultMessage: 'GO BACK TO HOME PAGE',
+  },
+  layouts: {
+    id: `${scope}.layouts`,
+    defaultMessage: 'LAYOUTS',
   },
   writingMode: {
     id: `${scope}.writingMode`,
