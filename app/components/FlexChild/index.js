@@ -13,7 +13,7 @@ const FlexChildStyled = styled.main`
   display: flex;
   justify-content: flex-start;
   background: ${props =>
-    props.background ? props.background : theme.colors.white};
+    props.background ? props.background : theme.colors.cream};
   height: ${props => (props.height ? props.height : 'auto')};
   width: ${props => (props.width ? props.width : '100%')};
   border: solid 5px ${theme.colors.blueGrey};

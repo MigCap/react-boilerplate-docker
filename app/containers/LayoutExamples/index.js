@@ -30,24 +30,31 @@ import messages from './messages';
 
 import { theme, media } from '../../styles';
 
+const LayoutWrapper = styled.div`
+  display: flex;
+  margin: auto;
+  padding: 5rem 5vw 2rem;
+  min-height: 100vh;
+`;
+
 const GridContainerCustom = styled(GridContainer)`
   grid-template-rows: auto 1fr 1fr auto auto;
   grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
   grid-gap: 1rem;
-  width: 66vw;
+  width: 60vw;
   max-width: 90vw;
-  margin: 2rem auto;
-  background-color: ${theme.colors.white};
+  margin: auto;
   border: none;
   font-family: ${theme.fonts.Calibre};
   transform: rotate(-45deg);
-  ${media.desktop`transform: none;`};
+  ${media.tablet`transform: none;`};
 `;
 
 const Title = styled.h1`
   grid-column: 1 / 4;
   text-align: right;
-  font-size: 4rem;
+  font-size: 4.5rem;
+  text-transform: uppercase;
   justify-content: end;
   align-self: end;
   margin-bottom: 0;
@@ -66,8 +73,8 @@ const TitleHorizontal = styled.h1`
   writing-mode: vertical-rl;
   color: orangered;
   justify-content: end;
-  margin-top: -10;
-  margin-right: -10;
+  margin-top: -10px;
+  margin-right: -10px;
   padding: 0;
   span {
     margin-bottom: 0;
@@ -106,18 +113,26 @@ const RedLine = styled.b`
   border-bottom: 35px solid orangered;
 `;
 
-const Examples = styled.b`
+const NavMenu = styled.div`
   border-top: 5px solid ${theme.colors.darkNavy};
   border-bottom: 5px solid ${theme.colors.darkNavy};
   font-weight: 700;
   grid-column: 4 / 6;
   grid-row: 3;
   align-self: end;
-  a {
-    text-decoration: none;
-    color: ${theme.colors.darkNavy};
-    &:hover {
-      color: orangered;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0 3px 0;
+    li {
+      padding: 0;
+      a {
+        text-decoration: none;
+        color: ${theme.colors.darkNavy};
+        &:hover {
+          color: orangered;
+        }
+      }
     }
   }
 `;
@@ -126,7 +141,7 @@ const Examples = styled.b`
 export class LayoutExamples extends React.Component {
   render() {
     return (
-      <div>
+      <LayoutWrapper>
         <Helmet>
           <title>LayoutExamples</title>
           <meta name="description" content="Description of LayoutExamples" />
@@ -135,9 +150,7 @@ export class LayoutExamples extends React.Component {
           <Title>
             <FormattedMessage {...messages.mockText} />
           </Title>
-          <TitleHorizontal>
-            <FormattedMessage {...messages.mockText} />
-          </TitleHorizontal>
+          <TitleHorizontal>IMPLEMENTING NEW DESIGNS</TitleHorizontal>
           <References>
             <p style={{ margin: '0', padding: '0' }}>References:</p>
             <ul>
@@ -159,13 +172,22 @@ export class LayoutExamples extends React.Component {
             </ul>
           </References>
           <RedLine />
-          <Examples>
-            <a href="/">
-              <FormattedMessage {...messages.backHome} />
-            </a>
-          </Examples>
+          <NavMenu>
+            <ul>
+              <li>
+                <a href="/">
+                  <FormattedMessage {...messages.backHome} />
+                </a>
+              </li>
+              <li>
+                <a href="/layouts">
+                  <FormattedMessage {...messages.layouts} />
+                </a>
+              </li>
+            </ul>
+          </NavMenu>
         </GridContainerCustom>
-      </div>
+      </LayoutWrapper>
     );
   }
 }

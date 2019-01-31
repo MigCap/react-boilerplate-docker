@@ -16,6 +16,7 @@ const theme = {
     offWhite: '#dce7ff',
     white: '#e6f1ff',
     pink: '#FF647F',
+    cream: 'rgb(246, 243, 234)',
     yellow: '#FFC464',
     orange: '#FF9E64',
     green: '#64ffda',

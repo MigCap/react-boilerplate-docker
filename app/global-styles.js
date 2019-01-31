@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.cream};
     color: ${theme.colors.slate};
     line-height: 1.25;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
