@@ -1,11 +1,12 @@
 /*
- * HomePage Messages
+ * LayoutExamples Messages
  *
- * This contains all the text for the HomePage container.
+ * This contains all the text for the LayoutExamples container.
  */
+
 import { defineMessages } from 'react-intl';
 
-export const scope = 'app.containers.HomePage';
+export const scope = 'app.containers.LayoutExamples';
 
 export default defineMessages({
   header: {
@@ -31,5 +32,17 @@ export default defineMessages({
   footer: {
     id: `${scope}.footer`,
     defaultMessage: 'FOOTER',
+  },
+  mockText: {
+    id: `${scope}.mockText`,
+    defaultMessage: 'MOCK MOCK MOCK MOCK',
+  },
+  backHome: {
+    id: `${scope}.backHome`,
+    defaultMessage: 'GO BACK TO HOME PAGE',
+  },
+  writingMode: {
+    id: `${scope}.writingMode`,
+    defaultMessage: 'WRITING MODES LEVEL',
   },
 });

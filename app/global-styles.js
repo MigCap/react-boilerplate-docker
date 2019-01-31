@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${theme.colors.navy};
+    background-color: ${theme.colors.white};
     color: ${theme.colors.slate};
     line-height: 1.25;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -30,18 +30,19 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
-  #app {
-    min-height: 100vh;
-    min-width: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto 1fr;
-    grid-template-columns: 100%;
+  #root {
+    margin: 0;
   }
 
   p,
   label {
     font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
+  }
+  a {
+    &:hover {
+      transition: ${theme.transition};
+    }
   }
 `;
 
