@@ -60,7 +60,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.0.0",
-    "@rebass/grid": "^6.0.0-7",
     "chalk": "^2.4.1",
     "compression": "1.7.3",
     "connected-react-router": "4.5.0",

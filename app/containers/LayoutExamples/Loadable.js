@@ -1,6 +1,9 @@
 /**
- * Asynchronously loads the component for HomePage
+ *
+ * Asynchronously loads the component for LayoutExamples
+ *
  */
+
 import loadable from 'loadable-components';
 
 import LoadingIndicator from 'components/LoadingIndicator';

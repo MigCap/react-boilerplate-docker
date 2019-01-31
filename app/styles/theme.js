@@ -14,7 +14,7 @@ const theme = {
     lightSlate: '#a8b2d1',
     lightestSlate: '#ccd6f6',
     offWhite: '#dce7ff',
-    color: '#e6f1ff',
+    white: '#e6f1ff',
     pink: '#FF647F',
     yellow: '#FFC464',
     orange: '#FF9E64',
@@ -65,6 +65,12 @@ const theme = {
   hamBeforeActive: `top 0.1s ease-out, opacity 0.1s ease-out 0.12s`,
   hamAfter: `bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19)`,
   hamAfterActive: `bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s`,
+
+  headerHeigh: '5rem',
+  mainHeigh: 'auto',
+  footerHeigh: '5rem',
+  cellWidth: '50%',
+  cellHeight: '20%',
 };
 
 export default theme;
